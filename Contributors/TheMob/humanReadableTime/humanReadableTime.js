@@ -9,9 +9,9 @@
 const assert = require("assert");
 
 const humanReadableTime = num => {
-    let seconds = num % 60
-    let hours = parseInt(num / 3600)
-    let minutes = parseInt((num % 3600) / 60)
+    const seconds = num % 60
+    const hours = parseInt(num / 3600)
+    const minutes = parseInt((num % 3600) / 60)
 
   
     if (seconds < 10) {
@@ -29,7 +29,11 @@ const humanReadableTime = num => {
     } else {
         hours + ""
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 14a2db8271bf05c003f26c69be165658ddaddc71
     return hours + ":" + minutes + ":" + seconds
 }
 
